@@ -1,0 +1,21 @@
+{
+  "name": "afterword-native-shell",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capacitor wrapper for the Afterword app.",
+  "scripts": {
+    "prepare:web": "node scripts/prepare-web.mjs",
+    "cap:copy": "npm run prepare:web && npx cap copy",
+    "cap:sync": "npm run prepare:web && npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.2",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "typescript": "^6.0.3"
+  }
+}
